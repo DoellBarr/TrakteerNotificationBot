@@ -1,0 +1,40 @@
+{
+  "name": "Trakteer Notification Telegram Bot",
+  "description": "Bot Untuk menampilkan notifikasi donasi dari Trakteer",
+  "keywords": [
+    "telegram",
+    "Trakteer",
+    "telegram bot",
+    "Donation Bot",
+    "Bot Donasi"
+  ],
+  "repository": "https://github.com/DoellBarr/TrakteerNotificationBot",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Masukkan Bot Token Kamu, Dapatkan Dari https://t.me/BotFather",
+      "value": "",
+      "required": true
+    },
+    "TRAKTEER_API_KEY": {
+      "description": "Masukkan API Key Trakteer kamu, Dapatkan Dari https://trakteer.id/manage/api-trakteer",
+        "value": "",
+        "required": true
+    },
+    "CHANNEL_ID": {
+      "description": "Masukkan Channel ID Kamu, Dapatkan Dengan Cara Forward Pesan Dari Channel Ke @ShowJSONBot",
+      "value": "",
+      "required": true
+    },
+    "WEBHOOK_URL": {
+      "description": "Masukkan Webhook URL Kamu, Dapatkan Setelah Mendeploy Ini",
+      "value": "Ganti Ini Dengan Webhook URL Kamu Nanti Setelah Deploy",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}
